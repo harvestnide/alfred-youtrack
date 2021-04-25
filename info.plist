@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>dev.harvestnide.youtrack-query</string>
+	<key>connections</key>
+	<dict>
+		<key>141031F1-4C92-4748-9449-62E27BAD61CE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A90E3C1F-2E5D-439C-A9DC-71ABBFCDC65F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6D84D00F-90DD-40A4-A0E3-A407C4BE8E53</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A90E3C1F-2E5D-439C-A9DC-71ABBFCDC65F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Veniamin Sazonov</string>
+	<key>description</key>
+	<string>Search workflow for Youtrack</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>YouTrack Query</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>yts</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>1</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading...</string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node ./dist/index.js --search</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Performs substring search for all available issues</string>
+				<key>title</key>
+				<string>YouTrack Search</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>141031F1-4C92-4748-9449-62E27BAD61CE</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>A90E3C1F-2E5D-439C-A9DC-71ABBFCDC65F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>ytq</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>1</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Loading...</string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node ./dist/index.js "$1" --query</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Performs query search</string>
+				<key>title</key>
+				<string>YouTrack Query</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>6D84D00F-90DD-40A4-A0E3-A407C4BE8E53</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Integrate Alfred into your YouTrack workflow
+&gt; Allows for quick issue search in your pubic or private boards.
+
+Requires Node.js 4+.
+
+- `yts &lt;search-query&gt;` would perform substring search, Using issue id, issue title and issue description as inputs.
+- `ytq &lt;search-query&gt;` would perform search using YouTrack query language
+
+`ytq` is far more flexible that `yts`, but comes with a downside of requiring additional request for basically each new input character.
+
+Configuration reference
+Workflow requires two inputs to function properly. Refer to official docs linked below. 
+
+`baseUrl`: https://www.jetbrains.com/help/youtrack/devportal/api-url-and-endpoints.html
+`apiToken`: https://www.jetbrains.com/help/youtrack/standalone/Manage-Permanent-Token.html#new-permanent-token
+
+MIT © Veniamin Sazonov</string>
+	<key>uidata</key>
+	<dict>
+		<key>141031F1-4C92-4748-9449-62E27BAD61CE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>65</integer>
+			<key>ypos</key>
+			<integer>100</integer>
+		</dict>
+		<key>6D84D00F-90DD-40A4-A0E3-A407C4BE8E53</key>
+		<dict>
+			<key>xpos</key>
+			<integer>65</integer>
+			<key>ypos</key>
+			<integer>210</integer>
+		</dict>
+		<key>A90E3C1F-2E5D-439C-A9DC-71ABBFCDC65F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>240</integer>
+			<key>ypos</key>
+			<integer>160</integer>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>apiToken</key>
+		<string></string>
+		<key>baseUrl</key>
+		<string></string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>baseUrl</string>
+		<string>apiToken</string>
+	</array>
+	<key>version</key>
+	<string>0.3.0</string>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>

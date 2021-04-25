@@ -1,0 +1,23 @@
+{
+  "name": "alfred-youtrack",
+  "version": "0.3.0",
+  "description": "Bring YouTrack issue search into Alfred",
+  "author": "Veniamin Sazonov <harvestnide@gmail.com>",
+  "keywords": [
+    "alfred",
+    "workflow",
+    "youtrack"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p .",
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "dependencies": {
+    "alfy": "^0.10.0"
+  },
+  "devDependencies": {
+    "typescript": "4.2.*"
+  }
+}
