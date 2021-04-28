@@ -1,23 +1,28 @@
 {
   "name": "alfred-youtrack",
-  "version": "0.3.0",
-  "description": "Bring YouTrack issue search into Alfred",
+  "version": "0.4.0",
+  "description": "Integrate Alfred into your YouTrack workflow",
+  "license": "MIT",
   "author": "Veniamin Sazonov <harvestnide@gmail.com>",
   "keywords": [
     "alfred",
     "workflow",
     "youtrack"
   ],
-  "license": "MIT",
+  "repository": "git://github.com/harvestnide/alfred-youtrack.git",
+  "homepage": "https://github.com/harvestnide/alfred-youtrack",
+  "bugs": "https://github.com/harvestnide/alfred-youtrack/issues",
   "scripts": {
     "build": "tsc -p .",
     "postinstall": "alfy-init",
-    "preuninstall": "alfy-cleanup"
+    "preuninstall": "alfy-cleanup",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "alfy": "^0.10.0"
   },
   "devDependencies": {
+    "@types/node": "^15.0.1",
     "typescript": "4.2.*"
   }
 }
