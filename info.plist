@@ -10,6 +10,16 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>9EE32B7E-0522-46BA-9CA3-21B0E4A58480</string>
+				<key>modifiers</key>
+				<integer>131072</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>A90E3C1F-2E5D-439C-A9DC-71ABBFCDC65F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -23,7 +33,30 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>9EE32B7E-0522-46BA-9CA3-21B0E4A58480</string>
+				<key>modifiers</key>
+				<integer>131072</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>A90E3C1F-2E5D-439C-A9DC-71ABBFCDC65F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9EE32B7E-0522-46BA-9CA3-21B0E4A58480</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>61AC5A43-B335-4FB7-8E8F-DB58001DB19A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -43,6 +76,25 @@
 	<string>YouTrack Query</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{var:markdown}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>61AC5A43-B335-4FB7-8E8F-DB58001DB19A</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -91,6 +143,14 @@
 			<string>141031F1-4C92-4748-9449-62E27BAD61CE</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>9EE32B7E-0522-46BA-9CA3-21B0E4A58480</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -186,21 +246,35 @@ MIT © Veniamin Sazonov</string>
 			<key>xpos</key>
 			<integer>65</integer>
 			<key>ypos</key>
-			<integer>100</integer>
+			<integer>70</integer>
+		</dict>
+		<key>61AC5A43-B335-4FB7-8E8F-DB58001DB19A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>495</integer>
+			<key>ypos</key>
+			<integer>70</integer>
 		</dict>
 		<key>6D84D00F-90DD-40A4-A0E3-A407C4BE8E53</key>
 		<dict>
 			<key>xpos</key>
-			<integer>65</integer>
+			<integer>70</integer>
 			<key>ypos</key>
-			<integer>210</integer>
+			<integer>285</integer>
+		</dict>
+		<key>9EE32B7E-0522-46BA-9CA3-21B0E4A58480</key>
+		<dict>
+			<key>xpos</key>
+			<integer>345</integer>
+			<key>ypos</key>
+			<integer>100</integer>
 		</dict>
 		<key>A90E3C1F-2E5D-439C-A9DC-71ABBFCDC65F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>240</integer>
+			<integer>500</integer>
 			<key>ypos</key>
-			<integer>160</integer>
+			<integer>285</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
