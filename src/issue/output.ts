@@ -46,7 +46,19 @@ const formatIssuePayload: FormatIssuePayload = (issue, addMatchField) => {
         subtitle: description,
         arg: url,
         match: addMatchField ? `${issue.idReadable} ${issue.summary ?? ''} ${issue.description ?? ''}` : null,
-        text: {copy: url, largetype: description},
-        quicklookurl: url
+        text: {largetype: description},
+        quicklookurl: url,
+        mods: {
+            "shift": {
+                valid: true,
+                subtitle: `Copy as markdown formatted link`,
+                arg: `[${title}](${url})`
+            },
+            "ctrl": {
+                valid: true,
+                subtitle: `Copy '${title}'`,
+                arg: title
+            }
+        }
     }
 }

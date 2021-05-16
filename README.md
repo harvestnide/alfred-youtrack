@@ -33,5 +33,12 @@ Workflow requires two inputs to function properly. Refer to official docs linked
 ## Extending functionality
 Project has both JS `dist` and TS `src` included, as well as tsc config. Feel free to open issues and PRs, btw
 
+## Changelog:
+- 0.4.1
+    - Added <kbd>Shift</kbd> and <kbd>Ctrl</kbd> modifiers.
+    - <kbd>Shift</kbd>+<kbd>Enter</kbd> will copy markdown-formatted
+        link to selected issue, for example: `[FOO-21: Bar -> Baz](https://youtrack.jetbrains.com/issue/foo-21)`
+    - <kbd>Ctrl</kbd>+<kbd>Enter</kbd> will copy Project ID and Title for selected issue, for example `FOO-21: Bar -> Baz`
+
 ## License
 MIT © [Veniamin Sazonov](https://github.com/harvestnide)
