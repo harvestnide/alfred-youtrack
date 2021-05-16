@@ -1,6 +1,6 @@
 {
   "name": "alfred-youtrack",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Integrate Alfred into your YouTrack workflow",
   "license": "MIT",
   "author": "Veniamin Sazonov <harvestnide@gmail.com>",
