@@ -6,6 +6,19 @@
 	<string>dev.harvestnide.youtrack-query</string>
 	<key>connections</key>
 	<dict>
+		<key>07E5AB8B-7AF7-408C-834B-C6691C97EC9E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>61AC5A43-B335-4FB7-8E8F-DB58001DB19A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>141031F1-4C92-4748-9449-62E27BAD61CE</key>
 		<array>
 			<dict>
@@ -13,6 +26,16 @@
 				<string>9EE32B7E-0522-46BA-9CA3-21B0E4A58480</string>
 				<key>modifiers</key>
 				<integer>131072</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>07E5AB8B-7AF7-408C-834B-C6691C97EC9E</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
@@ -36,6 +59,16 @@
 				<string>9EE32B7E-0522-46BA-9CA3-21B0E4A58480</string>
 				<key>modifiers</key>
 				<integer>131072</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>07E5AB8B-7AF7-408C-834B-C6691C97EC9E</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
@@ -82,7 +115,7 @@
 				<key>autopaste</key>
 				<true/>
 				<key>clipboardtext</key>
-				<string>{var:markdown}</string>
+				<string></string>
 				<key>ignoredynamicplaceholders</key>
 				<false/>
 				<key>transient</key>
@@ -149,6 +182,14 @@
 			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
 			<string>9EE32B7E-0522-46BA-9CA3-21B0E4A58480</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>07E5AB8B-7AF7-408C-834B-C6691C97EC9E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -241,6 +282,13 @@ Workflow requires two inputs to function properly. Refer to official docs linked
 MIT © Veniamin Sazonov</string>
 	<key>uidata</key>
 	<dict>
+		<key>07E5AB8B-7AF7-408C-834B-C6691C97EC9E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>365</integer>
+			<key>ypos</key>
+			<integer>230</integer>
+		</dict>
 		<key>141031F1-4C92-4748-9449-62E27BAD61CE</key>
 		<dict>
 			<key>xpos</key>
@@ -260,12 +308,12 @@ MIT © Veniamin Sazonov</string>
 			<key>xpos</key>
 			<integer>70</integer>
 			<key>ypos</key>
-			<integer>285</integer>
+			<integer>355</integer>
 		</dict>
 		<key>9EE32B7E-0522-46BA-9CA3-21B0E4A58480</key>
 		<dict>
 			<key>xpos</key>
-			<integer>345</integer>
+			<integer>370</integer>
 			<key>ypos</key>
 			<integer>100</integer>
 		</dict>
@@ -274,7 +322,7 @@ MIT © Veniamin Sazonov</string>
 			<key>xpos</key>
 			<integer>500</integer>
 			<key>ypos</key>
-			<integer>285</integer>
+			<integer>355</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
